@@ -30,7 +30,7 @@ icon: (status) =>
 style: """
   -webkit-font-smoothing: antialiased
   text-align: center
-  color: #d5c4a1
+  color: #ABB2BF
   font: 10px Input
   height: 16px
   left: 25%

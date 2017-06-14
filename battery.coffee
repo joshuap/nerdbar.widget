@@ -35,5 +35,5 @@ style: """
   font: 9px Input
   top: 7px
   right: 160px
-  color: #d5c4a1
+  color: #ABB2BF
 """

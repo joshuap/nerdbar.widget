@@ -34,7 +34,7 @@ icon: (status) =>
 style: """
   -webkit-font-smoothing: antialiased
   text-align: right
-  color: #d5c4a1
+  color: #ABB2BF
   font: 10px Input
   height: 16px
   overflow: hidden
