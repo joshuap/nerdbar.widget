@@ -18,16 +18,20 @@ update: (output, el) ->
     $icon.addClass("fa #{@icon(output)}")
 
 icon: (status) =>
-    return if status.substring(0, 4) == "main"
+    return if status.substring(0, 3) == "gen"
         "fa-home"
-    else if status.substring(0, 3) == "web"
-        "fa-safari"
-    else if status.substring(0, 3) == "rnd"
-        "fa-random"
-    else if status.substring(0, 5) == "games"
+    else if status.substring(0, 4) == "code"
+        "fa-code"
+    else if status.substring(0, 2) == "hb"
+        "fa-bolt"
+    else if status.substring(0, 4) == "hint"
+        "fa-exclamation"
+    else if status.substring(0, 4) == "game"
         "fa-gamepad"
     else if status.substring(0, 4) == "chat"
-        "fa-comments"
+        "fa-comment"
+    else if status.substring(0, 3) == "tmp"
+        "fa-recycle"
     else
         "fa-times"
 
