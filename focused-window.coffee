@@ -1,4 +1,4 @@
-command: "echo $(./focused-window.sh)"
+command: "echo $(./bin/focused-window.sh)"
 
 refreshFrequency: 1000 # ms
 

@@ -1,4 +1,4 @@
-command: "echo $(./itunes-current.sh)"
+command: "echo $(./bin/itunes-current.sh)"
 
 refreshFrequency: 1000 # ms
 

@@ -1,4 +1,4 @@
-command: "echo $(./active-space.rb)"
+command: "echo $(./bin/active-space.rb)"
 
 refreshFrequency: 1000 # ms
 
