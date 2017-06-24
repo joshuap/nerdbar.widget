@@ -1,4 +1,4 @@
-command: "echo $(/usr/local/bin/kwmc query space active tag)"
+command: "echo $(./focused-window.sh)"
 
 refreshFrequency: 1000 # ms
 

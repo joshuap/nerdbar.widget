@@ -1,4 +1,4 @@
-command: "/usr/local/bin/kwmc query space active name"
+command: "echo $(./active-space.rb)"
 
 refreshFrequency: 1000 # ms
 
