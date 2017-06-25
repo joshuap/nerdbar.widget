@@ -11,6 +11,7 @@ spaces = count.times.to_a.reduce([]) do |a,i|
   space = i+1
   a << {
     name: TotalSpaces2.name_for_space(space),
+    number: space,
     active: space == current_space
   }
 end

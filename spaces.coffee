@@ -10,13 +10,15 @@ render: (output) ->
   """
 
 update: (output, el) ->
-  list = $("<span></span>")
+  $list = $("<span></span>")
   for space in JSON.parse(output)
-    li = $("<span>#{space.name}</span>")
-    li.addClass('space')
-    li.addClass('active') if space.active
-    list.append(li)
-  $(".spaces span:first-child", el).html(list)
+    $li = $("<span>#{space.name}</span>")
+    $li.addClass("space")
+    $li.addClass("active") if space.active
+    $li.attr("data-space-number", space.number)
+    $list.append($li)
+  $(".spaces", el).on "click", ".space", (e) => @run "ruby -r 'totalspaces2' -e 'TotalSpaces2.move_to_space(" + $(e.currentTarget).attr("data-space-number") + ")'"
+  $(".spaces span:first-child", el).html($list)
 
 style: """
   -webkit-font-smoothing: antialiased
@@ -30,10 +32,11 @@ style: """
   width: auto
 
   .space {
-    margin-right: 5px;
+    margin-right: 5px
+    cursor: pointer
   }
 
   .active {
-    color: #e06c75;
+    color: #e06c75
   }
 """
