@@ -12,10 +12,10 @@ render: (output) ->
   """
 
 update: (output, el) ->
-    $(".foc span:first-child", el).text("  #{output}")
-    $icon = $(".foc span.icon", el)
-    $icon.removeClass().addClass("icon")
-    $icon.addClass("fa fa-bars")
+  $(".foc span:first-child", el).text("  #{output}")
+  $icon = $(".foc span.icon", el)
+  $icon.removeClass().addClass("icon")
+  $icon.addClass("fa fa-bars")
 
 style: """
   -webkit-font-smoothing: antialiased
