@@ -39,7 +39,7 @@ style: """
   -webkit-font-smoothing: antialiased
   text-align: right
   color: #ABB2BF
-  font: 10px Input
+  font: 11px Hack
   height: 16px
   overflow: hidden
   text-overflow: ellipsis

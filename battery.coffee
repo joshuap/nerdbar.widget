@@ -32,7 +32,7 @@ icon: (output) =>
 
 style: """
   -webkit-font-smoothing: antialiased
-  font: 9px Input
+  font: 11px Hack
   top: 7px
   right: 160px
   color: #ABB2BF
